@@ -7,7 +7,7 @@ require 'spree_mail_settings/version'
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_mail_settings'
-  s.version     = SpreeMailSettings.version
+  s.version     = '1.1.0'
   s.summary     = 'Mail setting functionality extracted from Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_backend', '~> 2.4.0'
+  s.add_dependency "solidus", [">= 1.1.0.pre", "< 1.2.0"]
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
